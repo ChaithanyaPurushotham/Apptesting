@@ -14,7 +14,7 @@ class Testgoogle(Driverutility):
         super().tear_down(driver)
 
     @pytest.mark.sanity
-    def test_chrome_headless(self):
+    def test_chrome_negative(self):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("chrome", headless_status)
         driver.get("https://www.amazon.in/")
