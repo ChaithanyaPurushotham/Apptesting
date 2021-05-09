@@ -1,0 +1,5 @@
+html_reports/
+.pytest_cache/
+archive/
+output.json
+.idea/

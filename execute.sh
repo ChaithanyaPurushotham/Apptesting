@@ -23,13 +23,13 @@ if [ $# -eq 0 ]; then echo "No option is passed as argument"; fi
 # Parse command line argument to run tests accordingly
 for i in "$@"; do
     case $i in
-        --regression) pytest test -s -v -m regression --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+        --regression) pytest test -s -v -m regression --html=html_reports/reports.html
             break
             ;;
-        --smoke) pytest test -s -v -m smoke --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+        --smoke) pytest test -s -v -m smoke --html=html_reports/reports.html
             break
             ;;
-        --sanity) pytest test -s -v -m sanity --html=html_reports/reports.html --log-file logs/"$(date '+%F_%H:%M:%S')".log
+        --sanity) pytest test -s -v -m sanity --html=html_reports/reports.html
             break
             ;;
         --apitest) pytest app/test -m apitest
