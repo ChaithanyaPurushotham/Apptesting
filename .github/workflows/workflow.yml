@@ -10,9 +10,6 @@ jobs:
   build:
     name: Run selenium code
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: selenium-codes
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
