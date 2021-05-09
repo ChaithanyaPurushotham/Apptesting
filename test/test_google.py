@@ -3,7 +3,7 @@ import pytest
 
 
 class Testgoogle(Driverutility):
-    @pytest.mark.regression
+    #@pytest.mark.regression
     def test_chrome(self):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("chrome", headless_status)
@@ -22,7 +22,7 @@ class Testgoogle(Driverutility):
     #
     #     super().tear_down(driver)
 
-    @pytest.mark.sanity
+    #@pytest.mark.sanity
     def test_chrome_headless(self):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
         driver = super().spawn_driver("chrome", headless_status)

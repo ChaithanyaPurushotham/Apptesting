@@ -32,6 +32,9 @@ for i in "$@"; do
         --sanity) pytest test -s -v -m sanity --html=html_reports/reports.html
             break
             ;;
+        --regressionandsanity) pytest test -s -m "regression or sanity" --html=html_reports/reports.html
+            break
+            ;;
         --apitest) pytest app/test -m apitest
             break
             ;;
