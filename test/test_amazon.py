@@ -1,8 +1,7 @@
 from utility.driverutility import Driverutility
 import pytest
 
-
-class Testgoogle(Driverutility):
+class Testamazon(Driverutility):
     @pytest.mark.regression
     def test_chrome(self):
         headless_status = super().parse_config("project_config", "browser_config", "headless_status")
