@@ -3,3 +3,4 @@ html_reports/
 archive/
 output.json
 .idea/
+pytest_html_report.html
