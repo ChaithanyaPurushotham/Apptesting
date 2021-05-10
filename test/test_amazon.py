@@ -1,7 +1,6 @@
 from utility.driverutility import Driverutility
 import pytest
 
-
 class Testamazon(Driverutility):
     @pytest.mark.regression
     def test_chrome(self):
@@ -12,7 +11,6 @@ class Testamazon(Driverutility):
         assert driver.title == "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in", "Title does not match"
 
         super().tear_down(driver)
-
 
     @pytest.mark.sanity
     def test_chrome_negative(self):
