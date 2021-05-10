@@ -1,10 +1,6 @@
 from utility.driverutility import Driverutility
 import pytest
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0a0381e6ea1a45406978d4b9f6a981a6cb95fbe0
 class Testamazon(Driverutility):
     @pytest.mark.regression
     def test_chrome(self):
