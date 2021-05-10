@@ -4,3 +4,4 @@ archive/
 output.json
 .idea/
 pytest_html_report.html
+test/.pytest_cache/
